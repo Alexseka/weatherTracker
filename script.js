@@ -3,12 +3,12 @@ const baseURL = 'https://api.weatherapi.com/v1/current.json';
 
 function getWeatherData(cityName) 
 {
-    const url = `${baseURL}?key=${apiKey}&q=${cityName}&aqi=no`; // New API URL
+    const url = `${baseURL}?key=${apiKey}&q=${cityName}&aqi=no`;
     $.ajax({
         url: url,
         type: 'GET',
         success: function(data) {
-            displayWeatherData(data);  // Pass the data to display function
+            displayWeatherData(data);
         },
         error: function(xhr, status, error) {
             console.log('Error status:', status);
