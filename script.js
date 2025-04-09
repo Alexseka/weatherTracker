@@ -26,10 +26,10 @@ function displayWeatherData(data)
       <div style="text-align:center;">
       <img src="${iconUrl}" alt="${weatherCondition}" style="max-width: 100px; margin:0 1px 0 0;" />
        </div>
-       <p>City: ${data.location.name}</p>
-       <p>Temperature: ${data.current.temp_c} °C</p>
-       <p>Weather: ${weatherCondition}</p>
-       <p>Humidity: ${data.current.humidity}%</p>
+       <p>${data.location.name}</p>
+       <p>${data.current.temp_c} °C</p>
+       <p>${weatherCondition}</p>
+       <p>${data.current.humidity}%</p>
     `;
     $('#weatherResult').html(displayData).fadeIn();
 }
