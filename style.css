@@ -1,0 +1,61 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+h2{
+    color: #ff6f61;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input[type="text"]
+{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ff6f61;
+    border-radius: 25px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #ff3b2d;
+}
+
+#weatherResult{
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    text-align: left;
+  padding-left:1%;
+}
+
+p{
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
